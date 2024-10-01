@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+    </br>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="opd.html">OPD</a></li>
+                <li><a href="bed-management.html">Bed Management</a></li>
+                <li><a href="admissions.html">Admission</a></li>
+                <li><a href="patient-portal.html">Patient Portal</a></li>
+                <li><a href="Hospital-Portal.html">Hospital Portal</a></li>
+                <li><a href="city-wide-integration.html">City-Wide Integration</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </br>
+    </header>
+
+    <div class="banner">
+        <h1>Hospital Information Management System</h1>
+        <a href="admissions.html" class="quick-appointment">Quick Appointment</a>
+        <input type="text" id="search-bar" placeholder="Search...">
+    </div>
+
+    <main>
+        <section class="hospital-list">
+            <h2>Hospitals in the City</h2>
+            <ul id="hospital-list">
+                <li data-hospital="1">City Hospital</li>
+                <li data-hospital="2">Metro Medical Center</li>
+                <li data-hospital="3">General Hospital</li>
+                <li data-hospital="4">Sunrise Health Care</li>
+                <li data-hospital="5">Central Clinic</li>
+                <li data-hospital="6">Northside Hospital</li>
+                <li data-hospital="7">Westfield Medical</li>
+                <li data-hospital="8">Eastview Hospital</li>
+                <li data-hospital="9">Starlight Clinic</li>
+                <li data-hospital="10">Riverbend Medical Center</li>
+                <li data-hospital="11">Green Valley Hospital</li>
+                <li data-hospital="12">Pioneer Health Care</li>
+                <li data-hospital="13">Hopewell Hospital</li>
+                <li data-hospital="14">Unity Medical Center</li>
+                <li data-hospital="15">Harborview Hospital</li>
+                <li data-hospital="16">New Hope Clinic</li>
+                <li data-hospital="17">Cedar Hill Medical</li>
+                <li data-hospital="18">Maplewood Hospital</li>
+                <li data-hospital="19">Bright Horizons Hospital</li>
+                <li data-hospital="20">Evergreen Health Center</li>
+                <li data-hospital="21">Golden Valley Hospital</li>
+                <li data-hospital="22">Lakeside Medical Center</li>
+                <li data-hospital="23">Valley View Hospital</li>
+                <li data-hospital="24">Springfield Clinic</li>
+                <li data-hospital="25">North Ridge Medical</li>
+                <li data-hospital="26">Mountain View Hospital</li>
+                <li data-hospital="27">Desert Sands Medical</li>
+                <li data-hospital="28">Blue Sky Hospital</li>
+                <li data-hospital="29">Sunset Valley Clinic</li>
+                <li data-hospital="30">Coastal Medical Center</li>
+            </ul>
+
+            <div id="hospital-details" class="hidden">
+                <h3 id="hospital-name"></h3>
+                <p><strong>OPD Queue Status:</strong> <span id="opd-status"></span></p>
+                <p><strong>Bed Availability:</strong></p>
+                <ul>
+                    <li>General Ward: <span id="general-bed"></span></li>
+                    <li>ICU: <span id="icu-bed"></span></li>
+                    <li>Pediatrics: <span id="pediatric-bed"></span></li>
+                </ul>
+                <p><strong>Specializations:</strong> <span id="specializations"></span></p>
+                <button id="quick-appointment" onclick="window.location.href='admissions.html'">Quick Appointment</button>
+                <button id="emergency-appointment">Emergency Appointment</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Hospital Name. All rights reserved.</p>
+        <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+        <p>Follow us on <a href="#">Facebook</a>, <a href="#">Twitter</a>, and <a href="#">Instagram</a></p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

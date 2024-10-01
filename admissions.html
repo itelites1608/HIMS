@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management System</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="admissionForm.js" defer></script> <!-- Link to the external JavaScript file -->
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="opd.html">OPD</a></li>
+                <li><a href="bed-management.html">Bed Management</a></li>
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="patient-portal.html">Patient Portal</a></li>
+                <li><a href="Hospital-Portal.html">Hospital Portal</a></li>
+                <li><a href="city-wide-integration.html">City-Wide Integration</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content (Specific to Each Page) -->
+    <main>
+        <section id="admission-form">
+            <h2>Patient Admission Form</h2>
+            <form id="admission-form">
+                <label for="personal-info">Personal Information:</label>
+                <input type="text" id="personal-info" name="personal_info" placeholder="Full Name" required>
+            
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            
+                <label for="contact-info">Contact Information:</label>
+                <input type="text" id="contact-info" name="contact_info" placeholder="Contact Information" required>
+            
+                <label for="medical-history">Medical History:</label>
+                <textarea id="medical-history" name="medical_history" required></textarea>
+            
+                <label for="insurance-details">Insurance Details:</label>
+                <input type="text" id="insurance-details" name="insurance_details" required>
+            
+                <label for="emergency-contacts">Emergency Contacts:</label>
+                <input type="text" id="emergency-contacts" name="emergency_contacts" required>
+            
+                <button type="submit">Submit Admission</button>
+            </form>
+        </section>
+
+        <section id="admission-status">
+            <h2>Admission Status</h2>
+            <div id="status-tracking">No status available</div>
+        </section>
+
+        <section id="discharge-planning">
+            <h2>Discharge Planning</h2>
+            <p>Expected discharge date: <span id="discharge-date">TBD</span></p>
+            <p>Required follow-ups: <span id="follow-ups">TBD</span></p>
+            <p>Post-discharge care instructions: <span id="care-instructions">TBD</span></p>
+        </section>
+
+        <section id="city-wide-transfer">
+            <h2>City-Wide Transfer Option</h2>
+            <p>If beds are unavailable, you may be transferred to another facility.</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p><a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-of-service.html">Terms of Service</a></p>
+        <p>Follow us on 
+            <a href="#">Facebook</a>, 
+            <a href="#">Twitter</a>, 
+            <a href="#">Instagram</a>
+        </p>
+    </footer>
+</body>
+</html>

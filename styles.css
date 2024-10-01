@@ -1,0 +1,560 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header, footer {
+    background-color: #003366; /* Dark Blue */
+    color: #ffffff; /* White */
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #3a28df; /* White */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Transition for link color */
+}
+
+footer p, footer a {
+    color: #ffffff; /* White */
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+main {
+    padding: 20px;
+    background-color: #ffffff; /* White */
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Banner Styles */
+.banner {
+    background-color: #007acc; /* Light Blue */
+    color: #ffffff; /* White */
+    text-align: center;
+    padding: 60px 20px;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in; /* Fade-in animation */
+}
+
+.banner .services {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.banner .services div {
+    background-color: #005fa3; /* Medium Blue */
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transition for services */
+}
+
+.banner .services div:hover {
+    background-color: #003d6b; /* Darker Blue */
+    transform: scale(1.05); /* Grow effect */
+}
+
+h2 {
+    margin-top: 20px;
+    color: #003366; /* Dark Blue */
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form textarea, form select {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease; /* Transition for inputs */
+}
+
+form input:focus, form textarea:focus, form select:focus {
+    border-color: #005fa3; /* Change border color on focus */
+}
+
+form button {
+    padding: 10px;
+    background-color: #003366; /* Dark Blue */
+    color: #ffffff; /* White */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transition for buttons */
+}
+
+form button:hover {
+    background-color: #002244; /* Darker Blue */
+    transform: scale(1.05); /* Slight grow effect */
+}
+
+.filters {
+    margin-bottom: 20px;
+}
+
+#queue-status, #bed-status, #city-bed-status {
+    padding: 20px;
+    background-color: #e0f7fa; /* Light Cyan */
+    border-radius: 5px;
+    animation: slideIn 0.5s ease; /* Slide-in animation */
+}
+
+#latest-updates ul {
+    list-style: none;
+    padding: 0;
+}
+
+#latest-updates li {
+    background-color: #e0f7fa; /* Light Cyan */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Transition for updates */
+}
+
+#latest-updates li:hover {
+    background-color: #b2ebf2; /* Light Blue */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .banner .services {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+/* Contact Us Page Styles */
+.contact-us {
+    text-align: left;
+}
+
+.contact-us h2 {
+    color: #003366; /* Dark Blue */
+    margin-bottom: 20px;
+}
+
+.contact-us form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-us form label {
+    margin: 10px 0 5px;
+}
+
+.contact-us form input, .contact-us form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease; /* Transition for inputs */
+}
+
+.contact-us form input:focus, .contact-us form textarea:focus {
+    border-color: #005fa3; /* Change border color on focus */
+}
+
+.contact-us form button {
+    padding: 10px;
+    background-color: #003366; /* Dark Blue */
+    color: #ffffff; /* White */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transition for buttons */
+}
+
+.contact-us form button:hover {
+    background-color: #002244; /* Darker Blue */
+    transform: scale(1.05); /* Slight grow effect */
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-info h3 {
+    color: #003366; /* Dark Blue */
+    margin-bottom: 10px;
+}
+
+/* Patient Portal Page Styles */
+.patient-portal {
+    text-align: left;
+}
+
+.patient-portal h2 {
+    color: #003366; /* Dark Blue */
+    margin-bottom: 20px;
+}
+
+.patient-portal form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+.patient-portal form label {
+    margin: 10px 0 5px;
+}
+
+.patient-portal form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease; /* Transition for inputs */
+}
+
+.patient-portal form input:focus {
+    border-color: #005fa3; /* Change border color on focus */
+}
+
+.patient-portal form button {
+    padding: 10px;
+    background-color: #003366; /* Dark Blue */
+    color: #ffffff; /* White */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transition for buttons */
+}
+
+.patient-portal form button:hover {
+    background-color: #002244; /* Darker Blue */
+    transform: scale(1.05); /* Slight grow effect */
+}
+
+#patient-info {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #e0f7fa; /* Light Cyan */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Transition for list items */
+}
+
+ul li:hover {
+    background-color: #b2ebf2; /* Light Blue */
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+/* City-Wide Integration Page Styles */
+.city-wide {
+    text-align: left;
+}
+
+.city-wide h2 {
+    color: #003366; /* Dark Blue */
+    margin-bottom: 20px;
+}
+
+#hospital-list {
+    list-style: none;
+    padding: 0;
+}
+
+#hospital-list li {
+    background-color: #e0f7fa; /* Light Cyan */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition for hospital list items */
+}
+
+#hospital-list li:hover {
+    background-color: #b2ebf2; /* Light Blue */
+}
+
+#hospital-details {
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Hospital List Section */
+.hospital-list-section {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#hospital-search {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+#hospital-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#hospital-list li {
+    padding: 10px;
+    background-color: #e0f7fa; /* Light Cyan */
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition for hospital list items */
+}
+
+#hospital-list li:hover,
+#hospital-list li.active {
+    background-color: #b2ebf2; /* Light Blue */
+}
+
+#hospital-details {
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.btn {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #005fa3; /* Medium Blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transition for buttons */
+}
+
+.btn:hover {
+    background-color: #003d6b; /* Darker Blue */
+    transform: scale(1.05); /* Slight grow effect */
+}
+
+.btn-emergency {
+    background-color: #cc0000; /* Red for emergency */
+}
+
+/* Index Page Styles */
+.hospital-list {
+    text-align: left;
+}
+
+.hospital-list h2 {
+    color: #003366; /* Dark Blue */
+    margin-bottom: 20px;
+}
+
+#hospital-list {
+    list-style: none;
+    padding: 0;
+}
+
+#hospital-list li {
+    background-color: #e0f7fa; /* Light Cyan */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition for hospital list items */
+}
+
+#hospital-list li:hover {
+    background-color: #b2ebf2; /* Light Blue */
+}
+
+#hospital-details {
+    margin-top: 20px;
+}
+
+#quick-appointment, #emergency-appointment {
+    background-color: #007acc; /* Light Blue */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transition for buttons */
+}
+
+#quick-appointment:hover, #emergency-appointment:hover {
+    background-color: #005fa3; /* Medium Blue */
+    transform: scale(1.05); /* Slight grow effect */
+}
+
+.hidden {
+    display: none;
+}
+
+/* Index Page Styles */
+.banner {
+    background-color: #007acc; /* Light Blue */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    animation: fadeIn 1s ease-in; /* Fade-in animation */
+}
+
+.banner h1 {
+    margin: 0;
+}
+
+.quick-appointment {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #005fa3; /* Medium Blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transition for quick appointment */
+}
+
+.quick-appointment:hover {
+    background-color: #003d6b; /* Darker Blue */
+    transform: scale(1.05); /* Slight grow effect */
+}
+
+#search-bar {
+    margin-top: 10px;
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease; /* Transition for search bar */
+}
+
+#search-bar:focus {
+    border-color: #005fa3; /* Change border color on focus */
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #003366;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #e0f7fa;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #005fa3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #003d6b;
+}

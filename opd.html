@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management System</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="opd.html">OPD</a></li>
+                <li><a href="bed-management.html">Bed Management</a></li>
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="patient-portal.html">Patient Portal</a></li>
+                <li><a href="Hospital-Portal.html">Hospital Portal</a></li>
+                <li><a href="city-wide-integration.html">City-Wide Integration</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content (Specific to Each Page) -->
+    <!-- Inherit from common.html -->
+<main>
+    <section id="opd-queue">
+        <h2>OPD Queue Status</h2>
+        <label for="department">Select Department:</label>
+        <select id="department">
+            <option>General Medicine</option>
+            <option>Pediatrics</option>
+            <option>Dermatology</option>
+        </select>
+        <div id="queue-status">Loading...</div>
+        <p>Next Steps: Please prepare your medical history and wait in the designated area.</p>
+    </section>
+
+    <section id="appointment-booking">
+        <h2>Book an Appointment</h2>
+        <form id="appointment-form">
+            <label for="patient-name">Patient Name:</label>
+            <input type="text" id="patient-name" required>
+            
+            <label for="doctor">Select Doctor:</label>
+            <select id="doctor">
+                <option>Dr. Smith</option>
+                <option>Dr. Johnson</option>
+                <option>Dr. Lee</option>
+            </select>
+
+            <label for="time-slot">Preferred Time Slot:</label>
+            <input type="datetime-local" id="time-slot" required>
+            
+            <label for="patient-history">Previous Visit Details (optional):</label>
+            <textarea id="patient-history"></textarea>
+            
+            <button type="submit">Book Appointment</button>
+        </form>
+    </section>
+
+    <section id="emergency-contact">
+        <h2>Emergency Contact</h2>
+        <p>For urgent cases, please contact us at <strong>(123) 456-7890</strong>.</p>
+    </section>
+</main>
+
+
+    <!-- Footer -->
+    <footer>
+        <p><a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-of-service.html">Terms of Service</a></p>
+        <p>Follow us on 
+            <a href="#">Facebook</a>, 
+            <a href="#">Twitter</a>, 
+            <a href="#">Instagram</a>
+        </p>
+    </footer>
+</body>
+</html>

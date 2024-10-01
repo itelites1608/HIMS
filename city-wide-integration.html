@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City-Wide Integration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+    </br>    
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="opd.html">OPD</a></li>
+                <li><a href="bed-management.html">Bed Management</a></li>
+                <li><a href="admissions.html">Admission</a></li>
+                <li><a href="patient-portal.html">Patient Portal</a></li>
+                <li><a href="Hospital-Portal.html">Hospital Portal</a></li>
+                <li><a href="city-wide-integration.html">City-Wide Integration</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </br>
+    </header>
+
+    <main>
+        <section class="city-wide">
+            <h2>City-Wide Hospital Integration</h2>
+            <p>Select a hospital to view more details about referrals, bed availability, and OPD queue status.</p>
+            <ul id="hospital-list">
+                <li data-hospital="1">City Hospital</li>
+                <li data-hospital="2">Metro Medical Center</li>
+                <li data-hospital="3">General Hospital</li>
+                <li data-hospital="4">Sunrise Health Care</li>
+            </ul>
+
+            <div id="hospital-details" class="hidden">
+                <h3 id="hospital-name"></h3>
+                <p><strong>Referrals:</strong> <span id="referrals"></span></p>
+                <p><strong>Bed Availability:</strong> <span id="bed-availability"></span></p>
+                <p><strong>OPD Queue Status:</strong> <span id="opd-queue"></span></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Hospital Name. All rights reserved.</p>
+        <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+        <p>Follow us on <a href="#">Facebook</a>, <a href="#">Twitter</a>, and <a href="#">Instagram</a></p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

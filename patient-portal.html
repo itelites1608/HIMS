@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="opd.html">OPD</a></li>
+                <li><a href="bed-management.html">Bed Management</a></li>
+                <li><a href="admissions.html">Admission</a></li>
+                <li><a href="patient-portal.html">Patient Portal</a></li>
+                <li><a href="Hospital-Portal.html">Hospital Portal</a></li>
+                <li><a href="city-wide-integration.html">City-Wide Integration</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="patient-portal">
+            <h2>Patient Portal</h2>
+            <p>Please enter your details to view your medical history, checkups, and receipts.</p>
+            <form id="patient-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone" required pattern="\d{10}" title="Enter a valid 10-digit phone number">
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <button type="submit">Submit</button>
+            </form>
+
+            <div id="patient-info" class="hidden">
+                <h3>Patient History</h3>
+                <p><strong>Name:</strong> <span id="display-name"></span></p>
+                <p><strong>Phone:</strong> <span id="display-phone"></span></p>
+                <p><strong>Date of Birth:</strong> <span id="display-dob"></span></p>
+
+                <h4>Previous Checkups</h4>
+                <ul id="checkups-list">
+                    <!-- Checkups data will be dynamically inserted here -->
+                </ul>
+
+                <h4>Receipts</h4>
+                <ul id="receipts-list">
+                    <!-- Receipts data will be dynamically inserted here -->
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Hospital Name. All rights reserved.</p>
+        <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+        <p>Follow us on <a href="#">Facebook</a>, <a href="#">Twitter</a>, and <a href="#">Instagram</a></p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

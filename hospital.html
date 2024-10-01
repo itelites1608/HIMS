@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    </br>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="opd.html">OPD</a></li>
+                <li><a href="bed-management.html">Bed Management</a></li>
+                <li><a href="admissions.html">Appointment</a></li>
+                <li><a href="patient-portal.html">Patient Portal</a></li>
+                <li><a href="Hospital-Portal.html">Hospital Portal</a></li>
+                <li><a href="city-wide-integration.html">City-Wide Integration</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </br>
+    </header>
+
+    <main>
+        <section>
+            <h2>OPD Queue Status</h2>
+            <p id="opd-status">0</p>
+            <label for="opd-input">Update OPD Queue:</label>
+            <input type="number" id="opd-input" min="0">
+            <button onclick="updateOPD()">Update OPD</button>
+        </section>
+
+        <section>
+            <h2>Bed Availability</h2>
+            <div>
+                <label for="general-ward">General Ward:</label>
+                <input type="number" id="general-ward" min="0">
+            </div>
+            <div>
+                <label for="icu">ICU:</label>
+                <input type="number" id="icu" min="0">
+            </div>
+            <div>
+                <label for="pediatrics">Pediatrics:</label>
+                <input type="number" id="pediatrics" min="0">
+            </div>
+            <button onclick="updateBeds()">Update Beds</button>
+        </section>
+
+        <section>
+            <h2>Specializations</h2>
+            <div>
+                <label for="specialization">Add Specialization:</label>
+                <input type="text" id="specialization">
+                <button onclick="addSpecialization()">Add</button>
+            </div>
+            <ul id="specialization-list">
+                <!-- Specializations will be listed here -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Hospital Name. All rights reserved.</p>
+        <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+        <p>Follow us on <a href="#">Facebook</a>, <a href="#">Twitter</a>, and <a href="#">Instagram</a></p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
